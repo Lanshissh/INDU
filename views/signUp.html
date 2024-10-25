@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <title>INDÛ</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="stylesheets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/fontawesome.css">
+  <link rel="stylesheet" href="stylesheets/styles.css">
+  <link rel="stylesheet" href="stylesheets/owl.css">
+  <link rel="stylesheet" href="stylesheets/signup-styles.css">
+
+  <style>
+    .form-group {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+
+    .form-group input {
+      width: 48%; 
+      padding: 10px;
+      margin-bottom: 20px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .login-container {
+      max-width: 500px;
+      margin: 50px auto;
+      text-align: center;
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .login-container button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="preloader">
+    <div class="jumper">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <header class="">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="/"><i><h2>INDÛ</h2></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="categoryDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Categories
+              </a>
+              <div class="dropdown-menu" aria-labelledby="categoryDropdown">
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/products">Our Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/cart">Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/orders">Orders</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact Us</a>
+            </li>
+            <li class="nav-item status">
+              <a class="nav-link"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="page-heading products-heading header-text">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="text-content">
+            <h2>SIGN UP</h2>
+          </div>
+          <div class="login-container">
+            <form id="signUpForm">
+              <div class="form-group">
+                <input type="text" name="username" id="username" placeholder="Username" required>
+            
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            
+                <input type="password" name="password" id="password" placeholder="Password" required>
+            
+                <input type="password" id="confPassword" name="confPassword" placeholder="Confirm Password" required>
+              </div>
+              
+              <button type="submit">SIGN UP</button>
+            </form>
+            
+            <div id="error-message" style="color: red;"></div>
+
+            <div class="login-link">
+              <p>Have an account? <a href="/login">Sign up here</a>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="stylesheets/vendor/jquery/jquery.min.js"></script>
+  <script src="stylesheets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="javascripts/scripts.js"></script>
+  <script src="stylesheets/vendor/jquery/owl.js"></script>
+  <script src="stylesheets/vendor/jquery/slick.js"></script>
+  <script src="stylesheets/vendor/jquery/isotope.js"></script>
+  <script src="stylesheets/vendor/jquery/accordions.js"></script>
+  <script src="javascripts/categoriesDropdown.js"></script>
+  <script src="javascripts/signUp.js"></script>
+
+</body>
+
+</html>

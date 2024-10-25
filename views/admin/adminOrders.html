@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <title>INDÛ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="stylesheets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/fontawesome.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/owl.css">
+    <link rel="stylesheet" href="stylesheets/login-styles.css">
+  </head>
+
+  <body>
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+
+    <!-- Header -->
+    <header class="">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <h2>INDÛ</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin">Dashboard
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/createProduct">Create Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/createCategory">Create Category</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="page-heading header-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-content">
+                        <h4>Orders Made By Customer</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="products">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="cart-items">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                </tr>
+                            </thead>
+                            <tbody id="cart-items-container" class="orders-container">
+                                <!-- Dynamic cart items will be inserted here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <a href="/admin">Back to Dashboard</a>
+                <div class="col-md-12">
+                    <div id="error-message">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="inner-content">
+                        <p>Copyright &copy; INDÛ. - Design: <a rel="nofollow noopener" target="_blank">Lance Cabe</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> 
+
+    <script src="stylesheets/vendor/jquery/jquery.min.js"></script>
+    <script src="stylesheets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="javascripts/scripts.js"></script>
+    <script src="stylesheets/vendor/jquery/owl.js"></script>
+    <script src="stylesheets/vendor/jquery/slick.js"></script>
+    <script src="stylesheets/vendor/jquery/isotope.js"></script>
+    <script src="stylesheets/vendor/jquery/accordions.js"></script>
+    <script src="javascripts/categoriesDropdown.js"></script>
+    
+
+   <script src="javascripts/retrieveOrdersAdmin.js"></script>
+
+  </body>
+</html>

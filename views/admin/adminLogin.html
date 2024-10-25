@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <title>INDÛ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="stylesheets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/fontawesome.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/owl.css">
+    <link rel="stylesheet" href="stylesheets/login-styles.css">
+  </head>
+
+  <body>
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+
+     <!-- Header -->
+     
+
+
+    <div class="page-heading products-heading header-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-content">
+                        <h2>ADMIN LOGIN</h2>
+                    </div>
+                    <div class="login-container">
+                        <form id="loginForm"  autocomplete="off">
+                            <input type="text" name="username" id="username" placeholder="username" required autocomplete="new-email">
+                            <input type="password" name="password" id="password" placeholder="Password" required autocomplete="new-password">
+                            <button type="submit">LOGIN</button>
+                        </form>
+                        <div class="home-option">
+                            <a href="/">Back to Home</a>
+                        </div>
+                  
+    
+                        <div id="error-message" style="color: red; display: none;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+<!--      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center"> 
+              <div class="inner-content">
+                <p>Copyright &copy; INDÛ.
+                    - Design: <a rel="nofollow noopener" target="_blank">Lance Cabe</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>   -->   
+
+    <script src="stylesheets/vendor/jquery/jquery.min.js"></script>
+    <script src="stylesheets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="javascripts/scripts.js"></script>
+    <script src="stylesheets/vendor/jquery/owl.js"></script>
+    <script src="stylesheets/vendor/jquery/slick.js"></script>
+    <script src="stylesheets/vendor/jquery/isotope.js"></script>
+    <script src="stylesheets/vendor/jquery/accordions.js"></script>
+    <script src="javascripts/categoriesDropdown.js"></script>
+    <script src="javascripts/adminLogin.js"></script>
+    
+
+    <script language = "text/Javascript"> 
+      cleared[0] = cleared[1] = cleared[2] = 0;
+      function clearField(t){                  
+      if(! cleared[t.id]){                     
+          cleared[t.id] = 1;  
+          t.value='';         
+          t.style.color='#fff';
+          }
+      }
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const form = document.querySelector('form');
+        
+        form.addEventListener('submit', () => {
+            form.reset();
+        });
+    });
+    </script>
+
+  </body>
+</html>

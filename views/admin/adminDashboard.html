@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <title>INDÛ PRODUCTS</title>
+    <link href="stylesheets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/fontawesome.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/owl.css">
+    <link rel="stylesheet" href="stylesheets/dashboard-styles.css">
+    <style>
+        .rating {
+            margin: 10px 0;
+            display: flex;
+            gap: 5px;
+        }
+
+        .rating .rate {
+            cursor: pointer;
+            font-size: 24px;
+            color: #d2d2d2;
+        }
+
+        .rating .rate.selected {
+            color: #ff6f61;
+        }
+
+        hr {
+            margin: 20px 0; /* Adjust the margin to your liking */
+            border: 0;
+            border-top: 1px solid #d2d2d2; /* Change color or style as needed */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- Header -->
+    <header class="">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <h2>INDÛ</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin">Dashboard
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/createProduct">Create Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/createCategory">Create Category</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="page-heading products-heading header-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-content">
+                        <h2>Admin Dashboard</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="products">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="filters-content">
+                        <h2 class="section-title">All Customers</h2>
+                        <hr> <!-- Added horizontal rule -->
+                        <div class="row grid">
+                            <!-- Content goes here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="products categories">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="filters-content">
+                        <h2 class="section-title">All Categories</h2>
+                        <hr> <!-- Added horizontal rule -->
+                        <div class="row grid cat">
+                            <!-- Content goes here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="products prods">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="filters-content">
+                        <h2 class="section-title">All Products</h2>
+                        <hr> <!-- Added horizontal rule -->
+                        <div class="row grid prods">
+                            <!-- Content goes here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="inner-content">
+                        <p>Copyright &copy; INDÛ. - Design: <a rel="nofollow noopener" target="_blank">Lance Cabe</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+
+    <script src="stylesheets/vendor/jquery/jquery.min.js"></script>
+    <script src="stylesheets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="javascripts/scripts.js"></script>
+    <script src="stylesheets/vendor/jquery/owl.js"></script>
+    <script src="stylesheets/vendor/jquery/slick.js"></script>
+    <script src="stylesheets/vendor/jquery/isotope.js"></script>
+    <script src="stylesheets/vendor/jquery/accordions.js"></script>
+
+    <script src="javascripts/fetchCustomers.js"></script>
+    <script src="javascripts/fetchCategories.js"></script>
+    <script src="javascripts/fetchProducts.js"></script>
+</body>
+
+</html>

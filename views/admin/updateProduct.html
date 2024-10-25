@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <title>INDÛ</title>
+    <link href="stylesheets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/fontawesome.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/owl.css">
+    <link rel="stylesheet" href="stylesheets/login-styles.css">
+    <style>
+        /* Styles for the form in the 'best-features' section */
+    .best-features {
+        padding: 40px 0;
+        background-color: #f7f7f7; /* Light background for section */
+    }
+
+    .best-features .container {
+        background-color: #fff; /* White background for the form container */
+        padding: 30px;
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0;
+        max-width: 600px; /* Set a max width to the form container */
+    }
+
+    .best-features form {
+        padding: 20px;
+        background-color: #fff; /* White form background */
+        border-radius: 8px; /* Rounded corners for the form itself */
+    }
+
+    .best-features form p {
+        margin-bottom: 20px;
+    }
+
+    .best-features form label {
+        display: block;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif; /* Font for labels */
+        color: #333;
+        margin-bottom: 5px;
+    }
+
+    .best-features form input[type="text"],
+    .best-features form input[type="number"],
+    .best-features form input[type="file"],
+    .best-features form select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd; /* Light border */
+        border-radius: 5px; /* Rounded inputs */
+        box-sizing: border-box;
+        font-size: 14px;
+        color: #555;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 10px;
+    }
+
+    .best-features form input[type="file"] {
+        padding: 5px;
+    }
+
+    .best-features form select {
+        background-color: white;
+        appearance: none;
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB...'); /* Custom dropdown arrow icon */
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        background-size: 15px;
+    }
+
+    .best-features form button {
+        background-color: #28a745; /* Primary button color */
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+        transition: background-color 0.3s ease;
+    }
+
+    .best-features form button:hover {
+        background-color: #218838; /* Darker button on hover */
+    }
+    </style>
+  </head>
+
+  <body>
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+
+    <!-- Header -->
+    <header class="">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <h2>INDÛ</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/createProduct">Create Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/createCategory">Create Category</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="page-heading products-heading header-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-content">
+                        <h2>Update Product</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="best-features">
+        <div class="container">
+            <div class="row justify-content-center"> 
+                <div class="col-md-6">
+                    <form id="updateProductForm">
+                        <p>
+                            <label for="name">Enter product name:</label>
+                            <input type="text" id="name" name="productName">
+                        </p>
+                
+                        <p>
+                            <label for="product-img">Product image:</label>
+                            <input type="file" id="product-img" name="productImage" accept="image/*">
+                        </p>
+                
+                        <p>
+                            <label for="product-description">Product description:</label>
+                            <input type="text" id="product-description" name="productDescription">
+                        </p>
+                
+                        <p>
+                            <label for="product-price">Product price:</label>
+                            <input type="number" id="product-price" name="productPrice">
+                        </p>
+                
+                        <p>
+                            <label for="category">Select category:</label>
+                            <select id="category" name="categoryName">
+                            </select>
+                        </p>
+                
+                        <button type="submit">Update Product</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>      
+
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center"> 
+              <div class="inner-content">
+                <p>Copyright &copy; INDÛ.
+                  
+                    - Design: <a rel="nofollow noopener" target="_blank">Lance Cabe</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>      
+
+    <script src="javascripts/categoriesOptions.js"></script>
+    <script src="stylesheets/vendor/jquery/jquery.min.js"></script>
+    <script src="stylesheets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="javascripts/scripts.js"></script>
+    <script src="stylesheets/vendor/jquery/owl.js"></script>
+    <script src="stylesheets/vendor/jquery/slick.js"></script>
+    <script src="stylesheets/vendor/jquery/isotope.js"></script>
+    <script src="stylesheets/vendor/jquery/accordions.js"></script>
+    <script src="javascripts/updateProduct.js"></script>
+    
+
+    <script language = "text/Javascript"> 
+      cleared[0] = cleared[1] = cleared[2] = 0;
+      function clearField(t){                  
+      if(! cleared[t.id]){                     
+          cleared[t.id] = 1;  
+          t.value='';         
+          t.style.color='#fff';
+          }
+      }
+    </script>
+
+  </body>
+</html>

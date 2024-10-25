@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <title>INDÛ - Contact Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="stylesheets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/fontawesome.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/owl.css">
+    <style>
+      #map {
+        height: 330px;
+        width: 100%; 
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="/"><i><h2>INDÛ</h2></i></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="categoryDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Categories
+                </a>
+                <div class="dropdown-menu" aria-labelledby="categoryDropdown">
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/products">Our Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/cart">Cart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/orders">Orders</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="/contact">Contact Us                    
+                  <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item status">
+                <a class="nav-link"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="page-heading contact-heading header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-content">
+              <h4>contact us</h4>
+              <h2>let’s get in touch</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="find-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Our Location on Maps</h2>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div id="map"></div> 
+            </div>
+          <div class="col-md-4">
+            <div class="left-content">
+              <h4>Contact Information</h4>
+              <p><strong>Contact Person:</strong> Jed Lalu</p>
+              <p><strong>Email:</strong> Indulifestyle01@gmail.com</p> 
+              <p><strong>Phone:</strong> +63 916-306-8933 </p>
+              <ul class="social-icons">
+                <li><a href="https://www.facebook.com/indulifestyle" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/indulifestyle/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://shopee.ph/induofficial" target="_blank"><i class="fa fa-shopping-cart"></i></a></li>
+                <li><a href="mailto:Indulifestyle01@gmail.com"><i class="fa fa-envelope"></i></a></li> 
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="send-message">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Send us a Message</h2>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="contact-form">
+              <form id="contact" action="" method="post">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="email" type="text" class="form-control" id="email" placeholder="E-Mail Address" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="filled-button">Send Message</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <ul class="accordion">
+              <li>
+                <a>Manager Contact Information</a>
+                <div class="content">
+                    <p><strong>Name:</strong> Pearl Dency Sumayao</p> 
+                    <p><strong>Phone:</strong> +63 995-214-7851</p> 
+                    <p><strong>Email:</strong> pdsumayao@yahoomail.com</p>
+                    <p>If you need assistance or have inquiries regarding our services, feel free to contact our manager.</p>
+                </div>
+              </li>
+            
+              <li>
+                <a>General Inquiries</a>
+                <div class="content">
+                    <p>If you have any general inquiries about our products, services, or company, please reach out to us using the following contact details:</p>
+                    <p><strong>Phone:</strong> +63 916-306-8933 </p> 
+                    <p><strong>Email:</strong> Indulifestyle01@gmail.com</p> 
+                    <p>Our team is ready to assist you with any questions or concerns you may have!</p>
+                </div>
+              </li>
+          
+              <li>
+                <a>Feedback & Suggestions</a>
+                <div class="content">
+                    <p>We greatly appreciate your feedback and suggestions as they help us enhance our services and offerings. Please share your thoughts with us by filling out the feedback form on our website.</p>
+                    <p>We are committed to listening to our customers and continuously improving based on your valuable input!</p>
+                </div>
+              </li>
+            
+              <li>
+                <a>All Stores of INDÛ</a>
+                <div class="content">
+                    <p>Discover the various locations of INDÛ stores across the region! Each store offers a unique selection of our premium products.</p>
+                    
+                    <h5>Store Locations:</h5>
+                    <ul>
+                        <li><strong>INDÛ Main Store</strong> - Ground Floor, Bartmall Bldg. Sto Rosario St. Angeles City</li>
+                        <li><strong>INDÛ Branch 1</strong> - 26 Brgy. San Isidro, San Fernando Pampanga</li>
+                        <li><strong>INDÛ Branch 1</strong> - 2nd Floor HD Plaza Building, Plaza Burgos, Guagua</li>
+                        <li><strong>INDÛ Branch 2</strong> - San Pedro 1, GMG Bldg. 2nd Floor Magalang Pampanga</li>
+                        <li><strong>INDÛ Branch 3</strong> - Unit 7 Klarenz Plaza, Lapurisima., San Nicolas Pob, Concepcion, Tarlac</li>
+                    </ul>
+                    <h5>Find a Store Near You:</h5>
+                    <p>For the most accurate information regarding our store locations, including hours of operation and special promotions, please visit our website or contact customer service.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center"> 
+            <div class="inner-content">
+              <p>Copyright &copy; INDÛ.
+                  - Design: <a rel="nofollow noopener" target="_blank">Lance Cabe</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="stylesheets/vendor/jquery/jquery.min.js"></script>
+    <script src="stylesheets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="javascripts/scripts.js"></script>
+    <script src="stylesheets/vendor/jquery/owl.js"></script>
+    <script src="stylesheets/vendor/jquery/slick.js"></script>
+    <script src="stylesheets/vendor/jquery/isotope.js"></script>
+    <script src="stylesheets/vendor/jquery/accordions.js"></script>
+
+    <script>
+      function initMap() {
+        const businessLocation = { lat: 15.1342844, lng: 120.5912753 }; 
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 15,
+          center: businessLocation,
+        });
+        const marker = new google.maps.Marker({
+          position: businessLocation,
+          map: map,
+          title: "INDÛ Location",
+        });
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvrNsN9534gA0TLuhjlhNeckIDLu55vnw&callback=initMap"></script>
+    <script language="text/Javascript"> 
+      cleared[0] = cleared[1] = cleared[2] = 0;
+      function clearField(t){                  
+      if(! cleared[t.id]){                     
+          cleared[t.id] = 1;  
+          t.value='';         
+          t.style.color='#fff';
+          }
+      }
+    </script>
+
+  </body>
+</html>
